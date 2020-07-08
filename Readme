@@ -1,0 +1,50 @@
+This is a minor database project.
+
+It contains a list of items for web project.
+
+This API allows you to read, write, update and delete items.
+
+To test this API, you will need a REST API platform such as Insomnia or Postman.
+
+Get
+
+To view the list of items, you will use the Get API.
+
+Use the endpoint "http://localhost:8080/api/" leaving the body blank.
+
+Post
+
+This is used to create a new item
+
+Use the endpoint "http://localhost:8080/api/add-item" and add the item following the template below
+
+{
+    "id": 
+    "title": 
+    "description":
+    "URL":
+}
+
+Put
+
+This is used to update an item.
+
+Use the endpoint "http://localhost:8080/api/update-item/{id}
+
+The id is the item id you will like to update.
+
+You will then need to add the item you will like to update along with the respective key (id, title, description, URL)
+
+For example, to update title,
+
+{
+    "title": "New title"
+}
+
+Delete
+
+This is used to delete an item.
+
+Use the endpoint "http://localhost:8080/api/delete-item/{id}
+
+The id is the item id you will like to delete.
